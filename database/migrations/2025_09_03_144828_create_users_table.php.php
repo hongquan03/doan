@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id(); 
             $table->string('name'); 
             $table->string('email')->unique(); 
-            $table->string('passwword'); 
+            $table->string('password'); 
             $table->enum('status', ['pending', 'active', 'banned', 'delleted'])->default('pending');
             $table->string('phone_number')->nullable();
             $table->string('avatar')->nullable();
