@@ -10,30 +10,25 @@
                 <div class="row">
                     <div class="col-lg-5 align-self-center">
                         <div class="about-us-img-wrap ltn__img-shape-left  about-img-left">
-                            <img src="img/service/11.jpg" alt="Image">
+                            <img src="{{asset('assets/clinets/img/service/11.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="col-lg-7 align-self-center">
                         <div class="about-us-info-wrap">
                             <div class="section-title-area ltn__section-title-2">
-                                <h6 class="section-subtitle ltn__secondary-color">// RELIABLE SERVICES</h6>
-                                <h1 class="section-title">We are Qualified &
-                                    Professional<span>.</span></h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore</p>
+                                <h6 class="section-subtitle ltn__secondary-color">// DỊCH VỤ ĐANG TIN CẬY</h6>
+                                <h1 class="section-title">Chúng tôi là những người
+                                    chuyên nghiệp & giàu kinh nghiệm <span>.</span></h1>
+                                <p>Chúng tôi luôn cam kết mang đến dịch vụ tốt nhất, đáp ứng mọi nhu cầu của khách hàng một cách nhanh chóng và hiệu quả</p>
                             </div>
                             <div class="about-us-info-wrap-inner about-us-info-devide">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.</p>
+                                <p>Với dội ngũ nhân viên tận tâm và trang thiết bị hiện đại, chúng tôi tự tin cung cấp các sản phẩm và dịch vụ chất lượng cao, đảm bảo sự hài lòng tối đa cho khách hàng. Mỗi bước trong quy trình đều được thực hiện cẩn thận và chuyên nghiệp.</p>
                                 <div class="list-item-with-icon">
                                     <ul>
-                                        <li><a href="contact.html">24/7 Free home delivery</a></li>
-                                        <li><a href="team.html">Expert Team</a></li>
-                                        <li><a href="service-details.html">Pure Equipment</a></li>
-                                        <li><a href="shop.html">Unlimited Product</a></li>
+                                        <li><a href="contact.html">Giao hàng tận nơi 24/7 miễn phí</a></li>
+                                        <li><a href="team.html">Đội ngũ chuyên nghiệp giàu kinh nghiệm</a></li>
+                                        <li><a href="service-details.html">Thiết bị hiện đại, đảm bảo an toàn</a></li>
+                                        <li><a href="shop.html">Hàng hóa phong phú, đa dạng</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,7 +45,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title-area ltn__section-title-2 text-center">
-                            <h1 class="section-title white-color---">Our Services</h1>
+                            <h1 class="section-title white-color---">Dịch Vụ Của Chúng Tôi</h1>
                         </div>
                     </div>
                 </div>
@@ -58,72 +53,66 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="ltn__service-item-1">
                             <div class="service-item-img">
-                                <a href="service-details.html"><img src="img/service/1.jpg" alt="#"></a>
+                                <a href="service-details.html"><img src="{{asset('assets/clinets/img/service/1.jpg')}}" alt="#"></a>
                             </div>
                             <div class="service-item-brief">
-                                <h3><a href="service-details.html">Organic Vegetables</a></h3>
-                                <p>Lorem ipsum dolor sit amet cons ectet ur adipisicing elit sed do eiusmod te
-                                    incididunt ut labore</p>
+                                <h3><a href="service-details.html">Rau củ hữu cơ</a></h3>
+                                <p>Chúng tôi cung cấp các loại rau củ sạch, không hóa chất, đảm bảo an toàn</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="ltn__service-item-1">
                             <div class="service-item-img">
-                                <a href="service-details.html"><img src="img/service/2.jpg" alt="#"></a>
+                                <a href="service-details.html"><img src="{{asset('assets/clinets/img/service/2.jpg')}}" alt="#"></a>
                             </div>
                             <div class="service-item-brief">
-                                <h3><a href="service-details.html">Organic Vegetables</a></h3>
-                                <p>Lorem ipsum dolor sit amet cons ectet ur adipisicing elit sed do eiusmod te
-                                    incididunt ut labore</p>
+                                <h3><a href="service-details.html">Giao hàng tận nơi</a></h3>
+                                <p>Dịch vụ giao hàng nhanh chóng, đúng hẹn, đmr bảo rau củ luôn tươi ngon khi đến tay khách hàng</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="ltn__service-item-1">
                             <div class="service-item-img">
-                                <a href="service-details.html"><img src="img/service/3.jpg" alt="#"></a>
+                                <a href="service-details.html"><img src="{{asset('assets/clinets/img/service/3.jpg')}}" alt="#"></a>
                             </div>
                             <div class="service-item-brief">
-                                <h3><a href="service-details.html">Organic Vegetables</a></h3>
-                                <p>Lorem ipsum dolor sit amet cons ectet ur adipisicing elit sed do eiusmod te
-                                    incididunt ut labore</p>
+                                <h3><a href="service-details.html">Canh tác tự nhiên</a></h3>
+                                <p>Rau củ được trồng theo phương pháp hữu cơ, không sử dụng thuốc trừ sâu hay phân bón hóa học</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="ltn__service-item-1">
                             <div class="service-item-img">
-                                <a href="service-details.html"><img src="img/service/3.jpg" alt="#"></a>
+                                <a href="service-details.html"><img src="{{asset('assets/clinets/img/service/3.jpg')}}" alt="#"></a>
                             </div>
                             <div class="service-item-brief">
-                                <h3><a href="service-details.html">Organic Vegetables</a></h3>
-                                <p>Lorem ipsum dolor sit amet cons ectet ur adipisicing elit sed do eiusmod te
-                                    incididunt ut labore</p>
+                                <h3><a href="service-details.html">Hỗ Trợ Khách Hàng </a></h3>
+                                <p>Đội ngũ tư vấn luôn sẵn sàng hỗ trợ bạn trong việc lựa chọn sản phẩm phù hợp và giải đáp thắc mắc.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="ltn__service-item-1">
                             <div class="service-item-img">
-                                <a href="service-details.html"><img src="img/service/1.jpg" alt="#"></a>
+                                <a href="service-details.html"><img src="{{asset('assets/clinets/img/service/1.jpg')}}" alt="#"></a>
                             </div>
                             <div class="service-item-brief">
-                                <h3><a href="service-details.html">Organic Vegetables</a></h3>
-                                <p>Lorem ipsum dolor sit amet cons ectet ur adipisicing elit sed do eiusmod te
-                                    incididunt ut labore</p>
+                                <h3><a href="service-details.html">Đóng Gói An Toàn</a></h3>
+                                <p>Sản phẩm được đóng gói kỹ lưỡng, sạch sẽ, giữ nguyên độ tươi ngon vfa gia trị dinh dưỡng.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="ltn__service-item-1">
                             <div class="service-item-img">
-                                <a href="service-details.html"><img src="img/service/2.jpg" alt="#"></a>
+                                <a href="service-details.html"><img src="{{asset('assets/clinets/img/service/2.jpg')}}" alt="#"></a>
                             </div>
                             <div class="service-item-brief">
-                                <h3><a href="service-details.html">Organic Vegetables</a></h3>
-                                <p>Lorem ipsum dolor sit amet cons ectet ur adipisicing elit sed do eiusmod te
-                                    incididunt ut labore</p>
+                                <h3><a href="service-details.html">Sản Phẩm Đa Dạng</a></h3>
+                                <p>Chúng tôi cung cấp nhiều loại rau củ theo mùa, phù hợp cho mọi nhu cầu nấu nương hàng ngày.</p>
                             </div>
                         </div>
                     </div>
@@ -140,65 +129,31 @@
                     <div class="col-lg-12">
                         <div class="ltn__our-journey-wrap ">
                             <ul>
-                                <li><span class="ltn__journey-icon">1900</span>
+                                <li><span class="ltn__journey-icon">2016</span>
                                     <ul>
                                         <li>
                                             <div class="ltn__journey-history-item-info clearfix">
                                                 <div class="ltn__journey-history-img">
-                                                    <img src="img/service/history-1.jpg" alt="#">
+                                                    <img src="{{asset('assets/clinets/img/service/history-1.jpg')}}" alt="#">
                                                 </div>
                                                 <div class="ltn__journey-history-info">
-                                                    <h3>Started Journey</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur ad ipisic ing elit, sed
-                                                        do eiusmod tempor.</p>
+                                                    <h3>Khởi Đầu Hành Trình</h3>
+                                                    <p>Trang trại đầu tiên được hình thành tại vùng quê thanh bình, với mục tiêu trồng rau sạch phục vụ cộng đồng địa phương.</p>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="active"><span class="ltn__journey-icon">1950</span>
+                                <li class="active"><span class="ltn__journey-icon">2018</span>
                                     <ul>
                                         <li>
                                             <div class="ltn__journey-history-item-info clearfix">
                                                 <div class="ltn__journey-history-img">
-                                                    <img src="img/service/history-1.jpg" alt="#">
+                                                    <img src="{{asset('assets/clinets/img/service/history-1.jpg')}}" alt="#">
                                                 </div>
                                                 <div class="ltn__journey-history-info">
-                                                    <h3>Get Rewards</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur ad ipisic ing elit, sed
-                                                        do eiusmod tempor.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><span class="ltn__journey-icon">1994</span>
-                                    <ul>
-                                        <li>
-                                            <div class="ltn__journey-history-item-info clearfix">
-                                                <div class="ltn__journey-history-img">
-                                                    <img src="img/service/history-1.jpg" alt="#">
-                                                </div>
-                                                <div class="ltn__journey-history-info">
-                                                    <h3>Top Winner</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur ad ipisic ing elit, sed
-                                                        do eiusmod tempor.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><span class="ltn__journey-icon">2010</span>
-                                    <ul>
-                                        <li>
-                                            <div class="ltn__journey-history-item-info clearfix">
-                                                <div class="ltn__journey-history-img">
-                                                    <img src="img/service/history-1.jpg" alt="#">
-                                                </div>
-                                                <div class="ltn__journey-history-info">
-                                                    <h3>Get Rewards</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur ad ipisic ing elit, sed
-                                                        do eiusmod tempor.</p>
+                                                    <h3>Mở Canh Tác</h3>
+                                                    <p>Diện tích canh tác tăng gấp đôi, đồng thời áp dụng phương pháp trông hữu cơ nhằm đảm bảo chất lượng sản phẩm.</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -209,12 +164,41 @@
                                         <li>
                                             <div class="ltn__journey-history-item-info clearfix">
                                                 <div class="ltn__journey-history-img">
-                                                    <img src="img/service/history-1.jpg" alt="#">
+                                                    <img src="{{asset('assets/clinets/img/service/history-1.jpg')}}" alt="#">
                                                 </div>
                                                 <div class="ltn__journey-history-info">
-                                                    <h3>Get Rewards</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur ad ipisic ing elit, sed
-                                                        do eiusmod tempor.</p>
+                                                    <h3>Được chứng nhận hữu cơ</h3>
+                                                    <p>Trang trại nhận được chứng nhận sản xuất hữu cơ từ tổ chức uy tín, đánh dấu bước tiến lớn trong cam kết với sức khỏe người tiêu dùng.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="ltn__journey-icon">2022</span>
+                                    <ul>
+                                        <li>
+                                            <div class="ltn__journey-history-item-info clearfix">
+                                                <div class="ltn__journey-history-img">
+                                                    <img src="{{asset('assets/clinets/img/service/history-1.jpg')}}" alt="#">
+                                                </div>
+                                                <div class="ltn__journey-history-info">
+                                                    <h3>Ra Mắt Thương Hiệu Riêng</h3>
+                                                    <p>Thành lập thương hiệu rau củ quẩ .</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="ltn__journey-icon">2024</span>
+                                    <ul>
+                                        <li>
+                                            <div class="ltn__journey-history-item-info clearfix">
+                                                <div class="ltn__journey-history-img">
+                                                    <img src="{{asset('assets/clinets/img/service/history-1.jpg')}}" alt="#">
+                                                </div>
+                                                <div class="ltn__journey-history-info">
+                                                    <h3>Chuyển Dổi Số</h3>
+                                                    <p>Phát triển hệ thống bán hàng trực tuyến, giao hàng tận nơi, nâng cáo trải nghiệm khách hàng trong thời đại công nghệ số.</p>
                                                 </div>
                                             </div>
                                         </li>
