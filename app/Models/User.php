@@ -3,11 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-class User extends Model
+class User extends Authenticatable
 {
-    use HasFactory;
+    use HasFactory, Notifiable;
+
     protected $fillable = [
         'name',
         'email',
@@ -20,11 +22,28 @@ class User extends Model
         'activation_token',
         'google_id'
     ];
-     public function role()
+
+    /**
+     * Ẩn khi chuyển sang mảng/json
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Ép kiểu tự động
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'password' => 'hashed',
+    ];
+
+    public function role()
     {
         return $this->belongsTo(Role::class);
     }
-    
+
     public function reviews()
     {
         return $this->hasMany(Review::class);
@@ -34,6 +53,7 @@ class User extends Model
     {
         return $this->hasMany(ShippingAddress::class);
     }
+
     // Check status
     public function isPending()
     {
@@ -54,5 +74,4 @@ class User extends Model
     {
         return $this->status === 'delete';
     }
-
 }

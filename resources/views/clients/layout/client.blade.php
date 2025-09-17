@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="{{asset('assets/clinets/css/style.css')}}">
     <!-- Responsive css -->
     <link rel="stylesheet" href="{{asset('assets/clinets/css/responsive.css')}}">
+    {{-- Import CSS for Toastr --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
 </head>
 
 <body>
@@ -52,10 +55,15 @@
     <!-- preloader area end -->
 
     <!-- All JS Plugins -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- All JS Plugins -->
     <script src="{{asset('assets/clinets/js/plugins.js')}}"></script>
     <!-- Main JS -->
     <script src="{{asset('assets/clinets/js/main.js')}}"></script>
-
+    {{-- Jquery-toats --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    {{-- Javascript --}}
+    <script> src="{{asset('assets/clinets/js/customs.js')}}" </script>
 </body>
 
 </html>
