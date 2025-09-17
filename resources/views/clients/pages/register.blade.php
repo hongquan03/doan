@@ -67,7 +67,7 @@
                         <p>Khi tạo tài khoản, bạn đồng ý với các điều khoản của chúng tôi:</p>
                         <p><a href="#">ĐIỀU KHOẢN SỬ DỤNG &nbsp; &nbsp; | &nbsp; &nbsp; CHÍNH SÁCH BẢO MẬT</a></p>
                         <div class="go-to-btn mt-50">
-                            <a href="#">ĐÃ CÓ TÀI KHOẢN ? ĐĂNG NHẬP NGAY</a>
+                            <a href="{{route('login')}}">ĐÃ CÓ TÀI KHOẢN ? ĐĂNG NHẬP NGAY</a>
                         </div>
                     </div>
                 </div>

@@ -24,7 +24,7 @@ $(document).ready(function () {
             errorMessage += "Email không hợp lệ. <br>";
         }
         if(password.length < 6){
-            errorMessage += "Mật khẩu phải có ít nhất 6 ks tự.<br>";
+            errorMessage += "Mật khẩu phải có ít nhất 6 ký tự.<br>";
         }
         if(password != confirmPassword)
         {
@@ -36,6 +36,28 @@ $(document).ready(function () {
             errorMessage += "Bạn pải đồng ý với cấc điều khoản trước khi tạo tài khoản.<br>"
         }
         
+        console.log(errorMessage)
+
+        if(errorMessage != "")
+        {
+            toastr.error(errorMessage,"Lỗi");
+            e.preventDefault();
+        }
+    });
+        //Validate login form
+    $("#login-form").submit(function (e) {
+        toastr.clear();
+        let email = $('input[name="email"]').val();
+        let password = $('input[name="password"]').val();
+        let errorMessage = "";
+
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            errorMessage += "Email không hợp lệ. <br>";
+        }
+        if(password.length < 6){
+            errorMessage += "Mật khẩu phải có ít nhất 6 ký tự.<br>";
+        }       
         console.log(errorMessage)
 
         if(errorMessage != "")

@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ActivationMail;
+use Illuminate\Support\Facades\Auth;
 
 
 use function Laravel\Prompts\error;
@@ -31,7 +32,7 @@ class AthuController extends Controller
         [
             'name.required' => 'Tên là bắt buộc',
             'email.required' => 'Email là bắt buộc',
-            'email.unique' => 'Email là đã được sử dụng',
+            'email.unique' => 'Email này đã được sử dụng',
             'password.required' => 'Mật khẩu này là bắt buộc',
             'password.min' => 'Trường hợp mật khẩu phải có ít nhất 6 ký tự',
         ]);
@@ -61,7 +62,7 @@ class AthuController extends Controller
         Mail::to($user->email)->send(new ActivationMail($token, $user));
         
         toastr()->success('Đăng ký tài khoản thành công. Vui lòng kiểm tra email của bạn để kích hoạt tài khoản.');
-        return redirect()->back();
+        return redirect()->route('login');
     }
     public function activate($token)
     {
@@ -71,10 +72,53 @@ class AthuController extends Controller
             $user->activation_token = null;
             $user->save();
 
-            toastr()->success('Kích hoạt tài khaonr thành công');
-            return redirect()->back();
+            toastr()->success('Kích hoạt tài khoản thành công');
+            return redirect()->route('login');
         }
         toastr()->error('Token không hợp lệ hoặc đã hết hạn');
         return redirect()->back();
+    }
+    public function showLoginForm()
+    {
+        return view('clients.pages.login');
+    }
+    public function login(Request $request)
+    {
+        $request ->validate(
+            [
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+        ],
+        [
+            'email.required' => 'Email là bắt buộc',
+            'email.unique' => 'Email không hợp lệ',
+            'password.required' => 'Mật khẩu này là bắt buộc',
+            'password.min' => 'Trường hợp mật khẩu phải có ít nhất 6 ký tự',
+        ]);
+
+        //Check login information
+        if(Auth::attempt(['email' => $request ->email, 'password' => $request ->password, 'status' => 'active']))
+        {
+            if(in_array(Auth::user()->role->name, ['customer']))
+            {
+                $request->session() -> regenerate();
+                toastr()->success('Đăng nhập thành công');
+                return redirect()->route('home');
+            }else
+            {
+                Auth::logout();
+                toastr()->warning('Bạn không có quyền truy cập tài khoản này');
+                return redirect()->back();
+            }
+        }
+        toastr()->error('Thông tin đăng nhâp không chính xác hoặc tài khoản chưa kích hoạt');
+        return redirect()->back();
+    }
+    public function logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerate();
+        toastr()->success('Đăng xuất thành công');
+        return redirect()->route('login');
     }
 }
